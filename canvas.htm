@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Canvas</title>
+    <title>Asteroids</title>
     
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/mystyles.css">
@@ -10,7 +10,20 @@
 </head>
 <body>
     
-    <canvas id="canvas"></canvas>
+    <div id="asteroids">
+    
+        <canvas id="canvas">
+            <div class="unsupported">
+                Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
+            </div>
+        </canvas>
+
+        <div id="instructions">
+            <b>UP</b> to accelerate forward, <b>LEFT/RIGHT</b> to turn, <b>SPACEBAR</b> to shoot
+            <span id="debug"></span>
+        </div>
+    
+    </div>
     
     <!-- FPS Meter -->
     <script src="js/fpsmeter.min.js"></script>

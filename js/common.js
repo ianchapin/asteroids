@@ -17,9 +17,9 @@ if (!window.requestAnimationFrame) { // http://paulirish.com/2011/requestanimati
 //-------------------------------------------------------------------------
 
 var Class = {
-  create: function(prototype) { // create a simple javascript 'class' (a constructor function with a prototype)
+  create: function(prototype, extensions) {
     var ctor = function() { if (this.initialize) return this.initialize.apply(this, arguments); }
-    ctor.prototype = prototype || {}; // instance methods
+    ctor.prototype = prototype || {};      // instance methods
     return ctor;
   }
 }
